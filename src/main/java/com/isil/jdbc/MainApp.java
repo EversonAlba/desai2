@@ -22,22 +22,23 @@ public class MainApp {
         //ResultSet rs = st.executeQuery("select * from Users");
 
         //Insertar
-        //int filasAfectadas= st.executeUpdate("insert into Users values(1,'Juan','984444459','Vancuver')");
+        //int filasAfectadas= st.executeUpdate("insert into Users values(4,'Juan','984444459','Vancuver')");
 
         //Actualizar
-        //int filasAfectadas= st.executeUpdate("update Users set name='Christian' where name='Cueva'");
+        //int filasAfectadas= st.executeUpdate("update Users set name='Everson' where name='Hola'");
 
         //Eliminar
         //int filasAfectadas= st.executeUpdate("delete from Users where idUser=4");
         //System.out.println("Filas afectadas: "+filasAfectadas);
 
         //crear prepared statement
+
         //Prepared statement para mantenimiento
         PreparedStatement preparedStatement = con.prepareStatement("insert into Users values(?,?,?,?)");
-        preparedStatement.setInt(1, 8);
+        preparedStatement.setInt(1, 4);
         preparedStatement.setString(2, "Marta");
-        preparedStatement.setString(3, "985454646");
-        preparedStatement.setString(4, "Bogota");
+        preparedStatement.setString(3, "999999999");
+        preparedStatement.setString(4, "Brasil");
 
         int filasAfectadas = preparedStatement.executeUpdate();
         System.out.println("Filas afectadas: " + filasAfectadas);
