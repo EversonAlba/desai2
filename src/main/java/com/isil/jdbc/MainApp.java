@@ -35,10 +35,10 @@ public class MainApp {
 
         //Prepared statement para mantenimiento
         PreparedStatement preparedStatement = con.prepareStatement("insert into Users values(?,?,?,?)");
-        preparedStatement.setInt(1, 4);
+        preparedStatement.setInt(1, 5);
         preparedStatement.setString(2, "Marta");
-        preparedStatement.setString(3, "999999999");
-        preparedStatement.setString(4, "Brasil");
+        preparedStatement.setString(3, "11111111");
+        preparedStatement.setString(4, "Mexico");
 
         int filasAfectadas = preparedStatement.executeUpdate();
         System.out.println("Filas afectadas: " + filasAfectadas);
